@@ -8,7 +8,7 @@ import { Iskill2 } from 'src/app/models/ngforswitch';
   styleUrls: ['./ngforswitch.component.scss']
 })
 export class NgforswitchComponent implements OnInit {
-selectedskill : string = 'html'
+selectedskill2 : string = 'html'
   constructor() { }
 
   ngOnInit(): void {
@@ -38,7 +38,7 @@ selectedskill : string = 'html'
   ];
 
   onchange(skill : string){
-    this.selectedskill = skill
+    this.selectedskill2 = skill
   }
 
 

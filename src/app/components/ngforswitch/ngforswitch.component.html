@@ -2,13 +2,13 @@
     <li class="nav-item" *ngFor="let skills of Language">
         <a href="javascript:;"
         [ngClass]="{
-            active : selectedskill.toLowerCase().includes('skills.id')}"
+            active : selectedskill2 === skills.id}"
             class="nav-link" (click)="onchange(skills.id)">{{skills.name}}</a>
 
     </li>
 </ul>
 <hr>
-<div class="tab-content" [ngSwitch]="selectedskill">
+<div class="tab-content" [ngSwitch]="selectedskill2">
     <div class="card" *ngFor="let know of Language">
         <div class="card-body" *ngSwitchCase="know.id">
             <strong>{{know.name}}</strong> {{know.dif}}
