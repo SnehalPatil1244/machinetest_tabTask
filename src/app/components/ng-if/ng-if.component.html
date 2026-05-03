@@ -1,0 +1,53 @@
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a href="javascript:;" [ngClass]="{
+            active :selectedskills.toLowerCase().includes('html')
+        }" class="nav-link" (click)="ontabchange('html')">HTML</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;" [ngClass]="{
+            active :selectedskills.toLowerCase().includes('css')
+        }" class="nav-link" (click)="ontabchange('css')">CSS</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;" [ngClass]="{
+            active :selectedskills.toLowerCase().includes('javascript')
+        }" class="nav-link" (click)="ontabchange('javascript')">Javascript</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;" [ngClass]="{
+            active :selectedskills.toLowerCase().includes('angular')
+        }" class="nav-link" (click)="ontabchange('angular')">Angular</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="card" *ngIf="selectedskills.toLowerCase().includes('html')">
+        <div class="card-body">
+            <strong>HTML</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos quis nisi incidunt
+            sed nesciunt odit animi, quasi dolor sapiente? Facere cupiditate ab omnis molestiae a inventore doloremque
+            illo minus.
+        </div>
+    </div>
+     <div class="card" *ngIf="selectedskills.toLowerCase().includes('css')">
+        <div class="card-body">
+            <strong>CSS</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos quis nisi incidunt
+            sed nesciunt odit animi, quasi dolor sapiente? Facere cupiditate ab omnis molestiae a inventore doloremque
+            illo minus.
+        </div>
+    </div>
+     <div class="card" *ngIf="selectedskills.toLowerCase().includes('javascript')">
+        <div class="card-body">
+            <strong>Javascript</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos quis nisi incidunt
+            sed nesciunt odit animi, quasi dolor sapiente? Facere cupiditate ab omnis molestiae a inventore doloremque
+            illo minus.
+        </div>
+    </div>
+     <div class="card" *ngIf="selectedskills.toLowerCase().includes('angular')">
+        <div class="card-body">
+            <strong>Angular</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos quis nisi incidunt
+            sed nesciunt odit animi, quasi dolor sapiente? Facere cupiditate ab omnis molestiae a inventore doloremque
+            illo minus.
+        </div>
+    </div>
+</div>

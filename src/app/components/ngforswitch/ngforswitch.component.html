@@ -1,0 +1,18 @@
+<ul class="nav nav-pills mt-5">
+    <li class="nav-item" *ngFor="let skills of Language">
+        <a href="javascript:;"
+        [ngClass]="{
+            active : selectedskill.toLowerCase().includes('skills.id')}"
+            class="nav-link" (click)="onchange(skills.id)">{{skills.name}}</a>
+
+    </li>
+</ul>
+<hr>
+<div class="tab-content" [ngSwitch]="selectedskill">
+    <div class="card" *ngFor="let know of Language">
+        <div class="card-body" *ngSwitchCase="know.id">
+            <strong>{{know.name}}</strong> {{know.dif}}
+
+        </div>
+    </div>
+</div>

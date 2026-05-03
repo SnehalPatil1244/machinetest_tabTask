@@ -1,0 +1,18 @@
+<ul class="nav nav-pills">
+    <li class="nav-item" *ngFor="let lang of skill">
+        <a href="javascript:;"
+        [ngClass]="{
+            active : selectedskill.toLowerCase().includes('lang.frameWorkName')
+        }" class="nav-link" (click)="onchange(lang.frameWorkName)">{{lang.tabTitle}}</a>
+    </li>
+</ul>
+<hr>
+<div class="card">
+    <ng-container *ngFor="let lan of skill">
+        <div class="card-body" *ngIf="selectedskill.toLowerCase().includes(lan.frameWorkName)">
+            <div [innerHTML]="lan.TabContent"></div>
+
+        </div>
+
+    </ng-container>
+</div>
