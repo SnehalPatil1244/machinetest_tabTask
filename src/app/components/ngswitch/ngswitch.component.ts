@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngswitch.component.scss']
 })
 export class NgswitchComponent implements OnInit {
-selectedskill : string =' html'
+selectedskill : string = 'html'
   constructor() { }
 
   ngOnInit(): void {

@@ -1,14 +1,12 @@
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a href="javascript:;"
-            [ngClass]="{
+        <a href="javascript:;" [ngClass]="{
                 active :  selectedskill.toLowerCase().includes('html')}" class="nav-link"
             (click)="onchange('html')">HTML</a>
     </li>
     <li class="nav-item">
         <a href="javascript:;" [ngClass]="{
-            active: selectedskill.toLowerCase().includes('css')}" class="nav-link"
-            (click)="onchange('css')">CSS</a>
+            active: selectedskill.toLowerCase().includes('css')}" class="nav-link" (click)="onchange('css')">CSS</a>
     </li>
     <li class="nav-item">
         <a href="javascript:;" [ngClass]="{
@@ -23,19 +21,23 @@
 </ul>
 
 <ng-container [ngSwitch]="selectedskill">
-    <p *ngSwitchCase="'html'" class="alert alert-info"><strong>HTML</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro
+    <p *ngSwitchCase="'html'" class="alert alert-info"><strong>HTML</strong>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Minus porro
         labore autem, aspernatur possimus sapiente excepturi ducimus maiores quidem fugiat vel repudiandae at.
         Praesentium eligendi ab maiores voluptatem rerum distinctio.</p>
 
-         <p *ngSwitchCase="'css'" class="alert alert-info"><strong>CSS</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro
+    <p *ngSwitchCase="'css'" class="alert alert-info"><strong>CSS</strong>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Minus porro
         labore autem, aspernatur possimus sapiente excepturi ducimus maiores quidem fugiat vel repudiandae at.
         Praesentium eligendi ab maiores voluptatem rerum distinctio.</p>
 
-         <p *ngSwitchCase="'javascript'" class="alert alert-info"><strong>Javascript</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro
+    <p *ngSwitchCase="'javascript'" class="alert alert-info"><strong>Javascript</strong>Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Minus porro
         labore autem, aspernatur possimus sapiente excepturi ducimus maiores quidem fugiat vel repudiandae at.
         Praesentium eligendi ab maiores voluptatem rerum distinctio.</p>
 
-         <p *ngSwitchCase="'angular'" class="alert alert-info"><strong>Angular</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro
+    <p *ngSwitchCase="'angular'" class="alert alert-info"><strong>Angular</strong>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Minus porro
         labore autem, aspernatur possimus sapiente excepturi ducimus maiores quidem fugiat vel repudiandae at.
         Praesentium eligendi ab maiores voluptatem rerum distinctio.</p>
 </ng-container>
